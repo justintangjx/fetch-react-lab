@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ProfileCard from "../ProfileCard";
+
 
 class ProfilesPage extends Component {
   constructor() {
@@ -19,9 +21,27 @@ class ProfilesPage extends Component {
 
   render() {
     return this.state.profiles.map((profile, i) => {
-      return <li key={i}>{profile.name.first}</li>;
+      console.log(profile);
+      return (
+        <div key={i}>
+          <ProfileCard profile={profile} />{" "}
+        </div>
+      );
     });
   }
 }
 
 export default ProfilesPage;
+
+//  <li key={i}>{profile.name.first}</li>
+// )};
+
+// this.state.profiles.map((profile, i) => {return
+// <li key={i}>{profile.name.last}</li>
+// )};
+
+// {this.state.profiles.map((profile, i) =>
+// <li key={i}>{profile.contact}</li>
+// )};
+
+// </div>
