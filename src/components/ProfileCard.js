@@ -5,7 +5,7 @@ import "./ProfileCard.css";
 
 const ProfileCard = props => {
   return (
-    <div>
+    <div className ="profileCard">
       <div id="ProfilePhoto">
         <ProfilePhoto imageUrl={props.profile.picture.medium}/>
       </div>

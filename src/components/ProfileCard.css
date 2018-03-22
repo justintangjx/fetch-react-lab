@@ -1,7 +1,8 @@
-.ProfileCard {
+.profileCard {
     display: grid;
     grid-template-columns: 3fr 1fr;
     max-width: 350px;
     margin: 20px auto;
     background: burlywood;
 }
+
