@@ -2,12 +2,11 @@ import React from "react";
 import ProfilePhoto from "./ProfilePhoto";
 import "./ProfileCard.css";
 
-
 const ProfileCard = props => {
   return (
-    <div className ="profileCard">
+    <div className="profileCard">
       <div id="ProfilePhoto">
-        <ProfilePhoto imageUrl={props.profile.picture.medium}/>
+        <ProfilePhoto imageUrl={props.profile.picture.medium} />
       </div>
       <h2>
         {props.profile.name.first} {props.profile.name.last}
